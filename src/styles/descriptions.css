@@ -1,0 +1,49 @@
+.descriptions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  min-width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 10rem;
+  padding-block: 1.5rem;
+
+  border-radius: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+
+  color: white;
+
+  font-size: 1.5rem;
+}
+
+.card h3 {
+  font-size: 2rem;
+}
+
+.card-icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-icon small {
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .descriptions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .descriptions {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
